@@ -17,7 +17,11 @@ public partial class MainWindow : Window
     {
         Questions = new List<SurveyQuestion>();
 
-        new SurveyQuestion("Czy lubisz programowac");
+        new SurveyQuestion("Czy lubisz programowac?");
+
+        new SurveyQuestion("Czy lubisz plywac?");
+
+        new SurveyQuestion("Czy lubisz biegac?");
     }
     
 }

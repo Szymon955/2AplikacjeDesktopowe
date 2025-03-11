@@ -8,29 +8,41 @@
         
         
         
-        <StackPanel Margin="10">
+        <StackPanel Margin="10" >
                 
-                <TextBlock Text="Podaj imie:"></TextBlock>
-                <TextBox Width="" Name="Nametextbox"></TextBox>
+                <TextBlock Text="Podaj imie:" TextAlignment="Center" Foreground="Black"></TextBlock>
+                <TextBox Width="300" Name="Nametextbox"></TextBox>
                 
-                <TextBlock Text="Wybierz kategorie zainteresowan:"></TextBlock>
-                <ComboBox Name="zainteresowania" >
+                <TextBlock Text="Wybierz kategorie zainteresowan:" TextAlignment="Center"></TextBlock>
+                <ComboBox Name="zainteresowania" Width="">
                 <ComboBoxItem Content="Technologia"></ComboBoxItem>
                         <ComboBoxItem Content="Sport"></ComboBoxItem>
                         <ComboBoxItem Content="Kultura"></ComboBoxItem>
-                </ComboBox>
+                        
+                        </ComboBox>
                 
-                <Button Content="Zatwierdz" Click="click"/>
+                
+                <Button Content="Zatwierdz" Name="button"/>
+                
+                
+                
                 
                 <Grid Name="SurveyGrid">
-                
-                <TextBlock Text="Odpowiedz na pytania:" FontWeight="Bold"></TextBlock>
                         
-                        <StackPanel Name="pytania"></StackPanel>
-                        
-                        <Button Content="Zakoncz ankiete" Click="click"/>
                 
+                        <TextBlock Text="Odpowiedz na pytania:" FontWeight="Bold"></TextBlock>
+                        
+                        
+                        
+                        <CheckBox Content="Tak"></CheckBox>
+                        
+                        
+                        
                 </Grid>
+                
+                
+                
+                <Button Content="Zakoncz ankiete"></Button>
                 
                 <StackPanel Name="podsumowanie">
                 
