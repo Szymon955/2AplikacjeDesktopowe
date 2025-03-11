@@ -5,9 +5,19 @@ namespace AnkietaPreferencji;
 
 public partial class MainWindow : Window
 {
-    private List<Surve>
+    private List<SurveyQuestion> Questions;
+
     public MainWindow()
     {
         InitializeComponent();
+        InitializeQuestions();
     }
+
+    private void InitializeQuestions()
+    {
+        Questions = new List<SurveyQuestion>();
+
+        new SurveyQuestion("Czy lubisz programowac");
+    }
+    
 }

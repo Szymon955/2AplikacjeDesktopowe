@@ -65,3 +65,7 @@
 /home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/AnkietaPreferencji.csproj.CopyComplete
 /home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/AnkietaPreferencji.genruntimeconfig.cache
 /home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/ref/AnkietaPreferencji.dll
+/home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/AnkietaPreferencji.sourcelink.json
+/home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/AnkietaPreferencji.dll
+/home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/refint/AnkietaPreferencji.dll
+/home/iiib/RiderProjects/AnkietaPreferencji/AnkietaPreferencji/obj/Debug/net8.0/AnkietaPreferencji.pdb
