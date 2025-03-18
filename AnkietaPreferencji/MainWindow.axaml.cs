@@ -25,15 +25,20 @@ public partial class MainWindow : Window
         Questions.Add(new SurveyQuestion("Czy lubisz plywac?"));
         Questions.Add(new SurveyQuestion("Czy lubisz biegac?"));
     }
+    
+    private void OnFinishClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Console.WriteLine("Dziekujemy");
+    
+    }
+
+    private void OnSubmitClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        Console.WriteLine("Dziekujemy");
+    }
 }
 
-private void OnFinishClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
-{
-    
-    Console.WriteLine("Dziekujemy");
-    
-    
-}
+
 
 public class SurveyQuestion
 {
@@ -44,3 +49,5 @@ public class SurveyQuestion
         QuestionText = questionText;
     }
 }
+
+
