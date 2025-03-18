@@ -1,5 +1,7 @@
+using System;
 using System.Collections.Generic;
 using Avalonia.Controls;
+using Tmds.DBus.Protocol;
 
 namespace AnkietaPreferencji;
 
@@ -15,13 +17,30 @@ public partial class MainWindow : Window
 
     private void InitializeQuestions()
     {
+        
         Questions = new List<SurveyQuestion>();
 
-        new SurveyQuestion("Czy lubisz programowac?");
-
-        new SurveyQuestion("Czy lubisz plywac?");
-
-        new SurveyQuestion("Czy lubisz biegac?");
+        
+        Questions.Add(new SurveyQuestion("Czy lubisz programowac?"));
+        Questions.Add(new SurveyQuestion("Czy lubisz plywac?"));
+        Questions.Add(new SurveyQuestion("Czy lubisz biegac?"));
     }
+}
+
+private void OnFinishClick(object sender, Avalonia.Interactivity.RoutedEventArgs e)
+{
     
+    Console.WriteLine("Dziekujemy");
+    
+    
+}
+
+public class SurveyQuestion
+{
+    public string QuestionText { get; set; }
+
+    public SurveyQuestion(string questionText)
+    {
+        QuestionText = questionText;
+    }
 }

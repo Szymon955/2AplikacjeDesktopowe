@@ -5,51 +5,30 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="AnkietaPreferencji.MainWindow"
         Title="AnkietaPreferencji" Height="350" Width="400">
+
+    <StackPanel Margin="10">
+        <TextBlock Text="Podaj imie:" Foreground="Black"/>
+        <TextBox Width="300" Name="Nametextbox"/>
+
+        <TextBlock Text="Wybierz kategorie zainteresowan:"/>
+        <ComboBox Name="zainteresowania" Width="300">
+            <ComboBoxItem Content="Technologia"/>
+            <ComboBoxItem Content="Sport"/>
+            <ComboBoxItem Content="Kultura"/>
+        </ComboBox>
+
+        <Button Content="Zatwierdz" Name="button" Click="OnSubmitClick"/>
         
-        
-        
-        <StackPanel Margin="10" >
-                
-                <TextBlock Text="Podaj imie:" TextAlignment="Center" Foreground="Black"></TextBlock>
-                <TextBox Width="300" Name="Nametextbox"></TextBox>
-                
-                <TextBlock Text="Wybierz kategorie zainteresowan:" TextAlignment="Center"></TextBlock>
-                <ComboBox Name="zainteresowania" Width="">
-                <ComboBoxItem Content="Technologia"></ComboBoxItem>
-                        <ComboBoxItem Content="Sport"></ComboBoxItem>
-                        <ComboBoxItem Content="Kultura"></ComboBoxItem>
-                        
-                        </ComboBox>
-                
-                
-                <Button Content="Zatwierdz" Name="button"/>
-                
-                
-                
-                
-                <Grid Name="SurveyGrid">
-                        
-                
-                        <TextBlock Text="Odpowiedz na pytania:" FontWeight="Bold"></TextBlock>
-                        
-                        
-                        
-                        <CheckBox Content="Tak"></CheckBox>
-                        
-                        
-                        
-                </Grid>
-                
-                
-                
-                <Button Content="Zakoncz ankiete"></Button>
-                
-                <StackPanel Name="podsumowanie">
-                
-                <TextBlock Name="podsumowanie2"></TextBlock>
-                        
-                </StackPanel>
-                
+        <Grid Name="SurveyGrid">
+            <TextBlock Text="Odpowiedz na pytania:" FontWeight="Bold"/>
+            <CheckBox Content="Tak"/>
+            <CheckBox Content="Nie"/>
+        </Grid>
+
+        <Button Content="Zakoncz ankiete" Click="OnFinishClick"/>
+
+        <StackPanel Name="podsumowanie">
+            <TextBlock Name="podsumowanie2"/>
         </StackPanel>
-        
+    </StackPanel>
 </Window>
